@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingGuru</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            
+             background: linear-gradient(135deg, #c5abe4, #a358d8, #a201f9);
+            color: #ffffff;
+        }
+
+        section {
+            padding: 90px 80px;
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 34px;
+            margin-bottom: 18px;
+        }
+
+        p {
+            color: #d0d8dc;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 80px;
+            background-color: rgb(40, 0, 83);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #96f5ff;
+            letter-spacing: 0.5px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #cfd8dc;
+            font-size: 15px;
+            padding: 8px 18px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: rgba(144, 0, 255, 0.18);
+            color: #ffffff;
+        }
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-text {
+            max-width: 540px;
+        }
+
+        .hero-text h1 {
+            font-size: 44px;
+            margin-bottom: 22px;
+        }
+
+        .hero-buttons {
+            margin-top: 30px;
+        }
+
+        .hero-buttons button {
+            padding: 13px 26px;
+            border-radius: 8px;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .primary-btn {
+            background: #1b4246;
+            color: #ffffff;
+            margin-right: 15px;
+        }
+
+        .secondary-btn {
+            background-color: #1b4246;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+        }
+
+        .hero-buttons button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+        }
+
+        .hero-image img {
+            width: 420px;
+            max-width: 100%;
+        }
+        .about {
+            background: rgba(255,255,255,0.04);
+            border-radius: 18px;
+        }
+
+        .about p {
+            max-width: 900px;
+        }
+        .services-container {
+            margin-top: 45px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: rgba(255,255,255,0.06);
+            padding: 35px 28px;
+            border-radius: 16px;
+            transition: transform 0.35s, background 0.35s;
+        }
+
+        .service-card h3 {
+            font-size: 20px;
+            margin-bottom: 14px;
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px);
+            background: rgba(183, 0, 255, 0.12);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            header, section {
+                padding: 50px 40px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-image {
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">CodingGuru</div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1 style="color: #32014c;">Mobile App Development</h1>
+        <p style="color: #4b1f63;">
+            We empower learners and businesses to build modern, scalable mobile
+            applications. Learn industry-ready skills, design smarter products,
+            and turn ideas into reality with confidence.
+        </p>
+
+        <div class="hero-buttons">
+            <button class="primary-btn">Join Now</button>
+            <button class="secondary-btn">Learn More</button>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="daek.jpg" alt="Mobile App Illustration">
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2 style="color: #32014c;">About Us</h2>
+    <p style="color: #4b1f63;">
+        CodingGuru is a technology-driven learning platform focused on practical,
+        hands-on education. We help students and developers bridge the gap
+        between theory and real-world application through guided learning,
+        modern tools, and project-based training aligned with industry standards.
+    </p>
+</section>
+
+<section id="services">
+    <h2 style="color: #32014c;">Our Services</h2>
+
+    <div class="services-container">
+        <div class="service-card">
+            <h3 style="color: #32014c;">Mobile App Development</h3>
+            <p style="color: #4b1f63;">
+                End-to-end Android and iOS app development using modern frameworks,
+                scalable architecture, and best practices.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3 style="color: #32014c;">Web Development</h3>
+            <p style="color: #4b1f63;">
+                Responsive and performance-optimized websites built with modern
+                web technologies.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3 style="color: #32014c;">UI / UX Design</h3>
+            <p style="color: #4b1f63;">
+                User-centric interface and experience design that improves
+                usability, engagement, and retention.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3 style="color: #32014c;">Technical Training</h3>
+            <p style="color: #4b1f63;">
+                Structured learning programs with hands-on projects to prepare
+                students for real-world development roles.
+            </p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

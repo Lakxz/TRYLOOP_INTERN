@@ -1,0 +1,151 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #0b0d1f;
+    color: #fff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #0b0d1f;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-right input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.profile {
+    width: 35px;
+    height: 35px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+.join-btn {
+    padding: 5px 15px;
+    background-color: #ffc700;
+    color: #0b0d1f;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main */
+main {
+    padding: 30px;
+}
+
+/* Welcome */
+.welcome {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.welcome .avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #555;
+    border-radius: 10px;
+}
+
+/* Jump Back */
+.jump-back h2 {
+    margin-bottom: 15px;
+}
+
+.course-card {
+    background-color: #1a1c2f;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    max-width: 600px;
+}
+
+.progress-bar {
+    width: 10px;
+    height: 80px;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #ffb800;
+}
+
+/* Buttons */
+.blue-btn {
+    padding: 8px 15px;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.link-btn {
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Profile Summary */
+.profile-summary {
+    background-color: #1a1c2f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin-top: 30px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0b0d1f;
+    border-top: 1px solid #222;
+    margin-top: 30px;
+}
